@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de desarrollador web – proyectos, habilidades y contacto.">
+  <title>Tomasito | Desarrollador Web</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">TM<span>.</span></a>
+    <nav id="nav-menu">
+      <a href="about.html">Sobre mí</a>
+      <a href="projects.html">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="#contacto">Contacto</a>
+      <button id="dark-toggle" aria-label="Alternar modo oscuro" onclick="cambiar_tema()">🌓</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>¡Hola!, soy <span>Aharon Alfaro</span></h1>
+      <p>Ingeniero en Computación especializado en JavaScript, Node y IA.</p>
+    </div>
+  </section>
+
+  <section class="SobreMi">
+    <h1 id="TituloSobreMi">Sobre Mi</h1>
+    <div class="content">
+      <div id="InformacionPersonal">
+        <h2 id="TituloInformacionPersonal">Informacion personal</h2>
+        <h3 id="TituloYoSoy">yo soy</h3>
+        <p id="TextoYoSoy">¡Hola! 👋 Soy Aharon Alfaro, un estudiante de 19 años de Análisis y Programación apasionado
+          por
+          crear soluciones innovadoras. Domino Java, Python, JavaScript e IA, y estoy enfocado en desarrollar proyectos
+          tecnológicos que
+          marquen la diferencia. 🚀
+          ¿Quieres conocer más sobre mis ideas o colaborar en algo nuevo? ¡Escríbeme! 💻 #Programación #Innovación
+          #Emprendimiento</p>
+        <p id="TextoExperiencias"></p>
+        <a href="assets/descargas/CV.pdf" class="btn-primary" download>Descargar CV</a>
+      </div>
+      <div>
+        <h1 id="TituloRedesSociales">Redes Sociales</h1>
+        <p>
+          ¡Hola a todos! 🚀 Estoy emocionado de compartir las últimas novedades sobre mis proyectos.
+          Sigan de cerca mis publicaciones para conocer más sobre mis ideas, avances y todo lo que viene en camino.
+          ¡Agradezco su apoyo y no duden en dejar sus comentarios o ideas! 💡 #Proyectos #Innovación #Emprendimiento
+        </p>
+        <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank" class="BotonesRedesSociales"
+          id="BotonFacebook">Facebook</a>
+        <a href="https://www.instagram.com/accounts/login/" target="_blank" class="BotonesRedesSociales"
+          id="BotonInstagram">Instagram</a>
+        <a href="https://github.com/XxAharon/Programacion.WEB" target="_blank" class="BotonesRedesSociales"
+          id="BotonGitHub">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="">
+
+  </section>
+
+  <section class="skills">
+    <h2>Habilidades</h2>
+    <ul class="skill-grid">
+      <li><img src="assets/img/icons/html.svg" alt="">HTML5</li>
+      <li><img src="assets/img/icons/css.svg" alt="">CSS3</li>
+      <li><img src="assets/img/icons/js.svg" alt="">JavaScript</li>
+      <li><img src="assets/img/icons/node.svg" alt="">Node.js</li>
+      <li><img src="assets/img/icons/react.svg" alt="">React</li>
+      <li><img src="assets/img/icons/sqlite.svg" alt="">SQLite</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h2>¿Quieres ver mi trabajo?</h2>
+    <a href="projects.html" class="btn-secondary">Ver proyectos</a>
+  </section>
+
+  <section id="contacto" class="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <label>Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <span class="error" id="errorNombre"></span>
+
+
+      <label>Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required>
+      <span class="error" id="errorCorreo"></span>
+
+
+      <label>Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <span class="error" id="errorMensaje"></span>
+
+
+
+      <p class="success" id="successMsg"></p>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Tomasito · <a href="https://github.com/Tomasito">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/Tomasito">LinkedIn</a>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</body>
+
+</html>
