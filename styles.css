@@ -1,0 +1,282 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles with futuristic dark theme */
+body {
+  background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+  background: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid #00f0ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00f0ff;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #ff0077;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00f0ff;
+}
+
+#dark-toggle {
+  background: none;
+  border: none;
+  color: #00f0ff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#dark-toggle:hover {
+  transform: rotate(180deg);
+}
+
+/* Hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(0, 240, 255, 0.1), rgba(255, 0, 119, 0.1));
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.hero-text h1 span {
+  color: #ff0077;
+}
+
+.hero,
+.SobreMi {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+/* SOBREMI section ajustada */
+.SobreMi {
+  padding: 2rem;
+  background: rgba(10, 25, 47, 0.8);
+  border: 2px solid #00f0ff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+}
+
+#TituloSobreMi {
+  font-size: 2.5rem;
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #00f0ff;
+  padding-bottom: 0.5rem;
+}
+
+.SobreMi .content {
+  display: flex;
+  flex-direction: row; /* horizontal */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem; /* espacio entre divs */
+}
+
+#InformacionPersonal,
+#RedesSociales {
+  flex: 1;
+  background: rgba(20, 40, 67, 0.9);
+  padding: 2rem;
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#InformacionPersonal,
+.SobreMi .content > div:last-child {
+  flex: 1;
+  background: rgba(20, 40, 67, 0.9);
+  padding: 2rem; /* Espacio interno */
+  border: 2px solid #00f0ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#TituloInformacionPersonal,
+#TituloYoSoy,
+#TituloExperiencias {
+  color: #ff0077;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 5px rgba(255, 0, 119, 0.5);
+}
+
+#TextoYoSoy,
+#TextoExperiencias {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(45deg, #00f0ff, #ff0077);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.7);
+}
+
+#TituloRedesSociales {
+  font-size: 2rem;
+  color: #00f0ff;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+#TextoRedes {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.BotonesRedesSociales {
+  display: block; /* Hace que ocupe todo el ancho disponible */
+  width: 100%; /* Asegura que ocupe el 100% de su contenedor */
+  text-align: center; /* Centra el texto */
+  padding: 0.8rem 1.5rem;
+  margin: 0.5rem 0;
+  border: 2px solid #00f0ff;
+  background: transparent;
+  color: #00f0ff;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; /* Quita el subrayado */
+}
+
+.BotonesRedesSociales:hover {
+  background: #00f0ff;
+  color: #0d1b2a;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .SobreMi .content {
+    flex-direction: column;
+  }
+
+  #InformacionPersonal,
+  #RedesSociales {
+    padding: 1.5rem;
+  }
+
+  nav a {
+    margin: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .SobreMi {
+    padding: 1rem;
+  }
+
+  .SobreMi .content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #InformacionPersonal,
+  .SobreMi .content > div:last-child {
+    padding: 1.5rem;
+  }
+
+  #TituloSobreMi {
+    font-size: 2rem;
+  }
+}
+
+/* Animation for glowing effect */
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(0, 240, 255, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(0, 240, 255, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(0, 240, 255, 0.5); }
+}
+
+.hero, .SobreMi, #InformacionPersonal, .SobreMi .content > div:last-child {
+  animation: glow 3s infinite ease-in-out;
+}
