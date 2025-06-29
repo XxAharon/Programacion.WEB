@@ -7,29 +7,30 @@
   <meta name="description" content="Portafolio de desarrollador web – proyectos, habilidades y contacto.">
   <title>Tomasito | Desarrollador Web</title>
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/Main.js"></script>
 </head>
 
 <body>
   <header class="navbar">
-    <a href="index.html" class="logo">TM<span>.</span></a>
-    <nav id="nav-menu">
-      <a href="about.html">Sobre mí</a>
-      <a href="projects.html">Proyectos</a>
-      <a href="blog.html">Blog</a>
-      <a href="#contacto">Contacto</a>
-      <button id="dark-toggle" aria-label="Alternar modo oscuro" onclick="cambiar_tema()">🌓</button>
+    <nav>
+      <ul>
+        <li><a href="#hero">TM</a></li>
+        <li><a href="#SobreMi">Sobre Mi</a></li>
+        <li><a href="#Habilidades">habilidades</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero">
+  <a href="#hero" class="SrcrollArriba" id="SrcrollArriba">⮝</a>
+
+  <section class="hero" id="hero">
     <div class="hero-text">
       <h1>¡Hola!, soy <span>Aharon Alfaro</span></h1>
       <p>Ingeniero en Computación especializado en JavaScript, Node y IA.</p>
     </div>
   </section>
 
-  <section class="SobreMi">
+  <section class="SobreMi" id="SobreMi">
     <h1 id="TituloSobreMi">Sobre Mi</h1>
     <div class="content">
       <div id="InformacionPersonal">
@@ -50,7 +51,7 @@
         <p>
           ¡Hola a todos! 🚀 Estoy emocionado de compartir las últimas novedades sobre mis proyectos.
           Sigan de cerca mis publicaciones para conocer más sobre mis ideas, avances y todo lo que viene en camino.
-          ¡Agradezco su apoyo y no duden en dejar sus comentarios o ideas! 💡 #Proyectos #Innovación #Emprendimiento
+          ¡Agradezco su apoyo y no duden en dejar sus comentarios o ideas! 💡 #Proyectos #Innovación #Emprendimiento.
         </p>
         <a href="https://web.facebook.com/?_rdc=1&_rdr#" target="_blank" class="BotonesRedesSociales"
           id="BotonFacebook">Facebook</a>
@@ -62,20 +63,34 @@
     </div>
   </section>
 
-  <section class="">
-
-  </section>
-
-  <section class="skills">
-    <h2>Habilidades</h2>
-    <ul class="skill-grid">
-      <li><img src="assets/img/icons/html.svg" alt="">HTML5</li>
-      <li><img src="assets/img/icons/css.svg" alt="">CSS3</li>
-      <li><img src="assets/img/icons/js.svg" alt="">JavaScript</li>
-      <li><img src="assets/img/icons/node.svg" alt="">Node.js</li>
-      <li><img src="assets/img/icons/react.svg" alt="">React</li>
-      <li><img src="assets/img/icons/sqlite.svg" alt="">SQLite</li>
-    </ul>
+  <section class="Habilidades" id="Habilidades">
+    <div class="Habilidades_Contenido">
+      <h2>Habilidades</h2>
+      <div class="Casilla_Habilidades">
+        <div class="Casillas_Diferentes_Habilidades" id="Casillas_Diferentes_Habilidades">
+          <div class="Casilla">HTML5
+            <img src="https://th.bing.com/th/id/R.6b2e1c9f3072662421ab7a47907e4ab1?rik=Vs0aRXLuIF9xjQ&riu=http%3a%2f%2felearningmasters.ga
+              lileo.edu%2fwp-content%2fuploads%2f2018%2f05%2f01-1.jpg&ehk=7VE2xfmYgpx8I%2bevIXl9SzyeCR6xRE38vuLuYyUhwtk%3d&risl=&pid=ImgRaw&r=0"
+              alt="HTML5"/>
+          </div>
+          <div class="Casilla">CSS3
+            <img src="https://th.bing.com/th/id/OIP.dlN3XoOEiJxtzCtbKUBNAQHaE8?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="CSS3"/>
+          </div>
+          <div class="Casilla">JavaScript
+            <img src="https://tse3.mm.bing.net/th/id/OIP.DEt_TbohHcb6KhpldP6vMwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="JavaScript"/>
+          </div>
+          <div class="Casilla">Node.js
+            <img src="https://tse4.mm.bing.net/th/id/OIP.lizXBieJ0WrRpaCXCowuTQHaHa?w=500&h=500&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Node.js"/>
+          </div>
+          <div class="Casilla">React
+            <img src="https://th.bing.com/th/id/R.df70b00589269cc7e903d0e3ba9db627?rik=eCKbjKCDeZJNnw&pid=ImgRaw&r=0" alt="React"/>
+          </div>
+          <div class="Casilla">SQLite
+            <img src="https://gitlab.com/cznic/sqlite/-/avatar" alt="SQLite"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="cta">
@@ -110,9 +125,5 @@
     © 2025 Tomasito · <a href="https://github.com/Tomasito">GitHub</a> ·
     <a href="https://www.linkedin.com/in/Tomasito">LinkedIn</a>
   </footer>
-
-  <script src="assets/js/main.js" defer></script>
-  <script src="assets/js/contact.js" defer></script>
 </body>
-
 </html>
